@@ -11,20 +11,27 @@
 	width: 100%;
 	padding: 5px;
 	padding-left: 10px;
-	margin-top: 25px;
-	margin-bottom: 15px;
 	font-size: 20px;
 	border-radius: 5px;
 }
 
+.navbar, .col, .section-header {
+	margin-bottom: 24px;
+}
+
+.card {
+	height: 100%;
+}
+
 .card-img-top {
 	max-height: 250px;
-	padding: 10px;
+	width: auto !important;
+	padding: 5px;
 }
 
 .navbar, .navbar-brand {
-	padding-top: 1px !important;
-	padding-bottom: 1px !important;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
 
 .navbar-brand > * {

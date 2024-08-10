@@ -5,8 +5,9 @@
 	<meta name="description" content="Vitaleum">
 	<meta name="author" content="Vitaleum, LLC">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="bootstrap.css"><!-- Bootstrap v5.3 -->
+	<link rel="stylesheet" href="style.css"><!-- BS Overrides + Custom CSS -->
+
 	<title>Vitaleum - Products Store</title>
 </head>
 <body>
@@ -24,9 +25,20 @@
 	        <li class="nav-item">
 	          <a class="nav-link" href="#">Home</a>
 	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">Products</a>
-	        </li>
+	        <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#kayaking">Kayaking Equipment</a></li>
+              <li><a class="dropdown-item" href="#pickelball">Pickelball Equipment</a></li>
+              <li><a class="dropdown-item" href="#hiking">Hiking Equipment</a></li>
+              <li><a class="dropdown-item" href="#biking">Biking Equipment</a></li>
+              <li><a class="dropdown-item" href="#personal">Personal Improvement</a></li>
+              <li><a class="dropdown-item" href="#food-prep">Food Processing & Prep</a></li>
+              <li><a class="dropdown-item" href="#food-storage">Food Storage & Kitchen</a></li>
+            </ul>
+          </li>
 	      </ul>
 	    </div>
 	  </div>
@@ -43,11 +55,11 @@
 
 		<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4">
 		  <div class="col">
-				<div class="card h-100">
+				<div class="card">
 				  <img src='img/amazon.jpg' class="card-img-top">
 				  <div class="card-body">
 				    <p class="card-text">
-				    	<strong>Support Vitaleum</strong> by using our Amazon link tile to shop for all your amazon products. We will receive a small commission from your purchases at no cost to you.
+				    	<strong>Support Vitaleum</strong> by using our Amazon link tile to shop for all your amazon products. We will receive a small commission on your purchases at no cost to you.
 				    	<br>
 				    	<br>
 				    	<strong>We're glad you could be here for our humble beginnings.</strong>
@@ -62,13 +74,13 @@
 <!-- end section -->
 
 <!-- begin section -->
-		<div class='section'>
+		<div class='section' id="kayaking">
 			<div class='section-header'>Kayaking Equipment</div>
 		</div>
 
 		<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
 		  <div class="col">
-				<div class="card h-100">
+				<div class="card">
 					<img src='https://m.media-amazon.com/images/I/61n6OqwhVgL._AC_SY355_.jpg' class="card-img-top">
 					<div class='card-body'>
 						<p class="card-text">Werner Paddles & more...</p>
@@ -79,7 +91,7 @@
 				</div>
 			</div>
 			<div class="col">
-				<div class="card h-100">
+				<div class="card">
 					<img src='https://m.media-amazon.com/images/I/71peOB1nwXL._AC_SY355_.jpg' class="card-img-top">
 					<div class='card-body'>
 						<p class="card-text">UV Sun Protection Fingerless Gloves</p>
@@ -90,7 +102,7 @@
 				</div>
 			</div>
 			<div class="col">
-				<div class="card h-100">
+				<div class="card">
 					<img src='https://m.media-amazon.com/images/I/71IcOYxkDRL._AC_SY355_.jpg' class="card-img-top">
 					<div class='card-body'>
 						<p class="card-text">NTR Water Rescue Throw Bag</p>
@@ -101,7 +113,7 @@
 				</div>
 			</div>
 			<div class="col">
-				<div class="card h-100">
+				<div class="card">
 					<img src='https://m.media-amazon.com/images/I/912MgldhjkS._AC_SY355_.jpg' class="card-img-top">
 					<div class='card-body'>
 						<p class="card-text">Women's Glide Lifejacket (PFD)</p>
@@ -112,7 +124,7 @@
 				</div>
 			</div>
 			<div class="col">
-				<div class="card h-100">
+				<div class="card">
 					<img src='https://m.media-amazon.com/images/I/71uEPAGpV-L._AC_SY355_.jpg' class="card-img-top">
 					<div class='card-body'>
 						<p class="card-text">Emergency / Safety Whistles</p>
@@ -125,13 +137,13 @@
 		</div>
 <!-- end section -->
 <!-- begin section -->
-		<div class='section'>
-			<div class='section-header'>Pickelball</div>
+		<div class='section' id="pickelball">
+			<div class='section-header'>Pickelball Equipment</div>
 		</div>
 
 		<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/61J8xc1sYJL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>JOOLA Hyperion C2 Paddle</p>
@@ -142,7 +154,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/71oiaup1OAL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>K-Swiss Women's Pickleball Supreme Shoe</p>
@@ -153,7 +165,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/61GxsWzHf1L._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Onix Pro Team Backpack</p>
@@ -164,7 +176,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/71MflZx54JL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Franklin Outdoor Pickleballs - X-40</p>
@@ -175,7 +187,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/71CIQ7joBBL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>CRBN Pickleball Paddle Eraser</p>
@@ -186,7 +198,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/719G93nKrBL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>IUGA Tennis Skirts with Pockets</p>
@@ -199,13 +211,13 @@
 		</div>
 <!-- end section -->
 <!-- begin section -->
-		<div class='section'>
+		<div class='section' id="hiking">
 			<div class='section-header'>Hiking Equipment</div>
 		</div>
 
 		<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/71qsbUtPnvL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Carbon Fiber Trekking Poles</p>
@@ -216,7 +228,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://i.ebayimg.com/images/g/PFAAAOSw2ZRlPRt9/s-l400.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Merrel Shoe Store</p>
@@ -227,7 +239,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://columbia.scene7.com/is/image/ColumbiaSportswear2/1534111_735_a2_om?wid=768&hei=806&v=1718652164' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Columbia Women's Arcadia Ii Jacket</p>
@@ -240,13 +252,13 @@
 		</div>
 <!-- end section -->
 <!-- begin section -->
-		<div class='section'>
+		<div class='section' id="biking">
 			<div class='section-header'>Biking Equipment</div>
 		</div>
 
 		<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/71gED+SP1-L._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Adjustable Bike Cargo Rack</p>
@@ -257,7 +269,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/81dvrzE-zRL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Schwinn Comfort Bike Seat</p>
@@ -268,7 +280,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/71WTvzymjIL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Reflective Insulated Water Bottle + Holder</p>
@@ -279,7 +291,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/81L1TycdbQL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Recreational MIPS Cycling Helmet</p>
@@ -292,13 +304,13 @@
 		</div>
 <!-- end section -->
 <!-- begin section -->
-		<div class='section'>
+		<div class='section' id="personal">
 			<div class='section-header'>Personal Improvement</div>
 		</div>
 
 		<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/716i0dfXcgL._SY355_.jpg' class='card-img-top'>
 					<div class='card-footer text-center'>
 						<a href='https://www.amazon.com/dp/B0055PGUYU/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
@@ -306,7 +318,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/71SPjJ+UnLL._SY355_.jpg' class='card-img-top'>
 					<div class='card-footer text-center'>
 						<a href='https://www.amazon.com/dp/B08HZ57WYN/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
@@ -314,7 +326,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/71CWO5p9yfL._SY355_.jpg' class='card-img-top'>
 					<div class='card-footer text-center'>
 						<a href='https://www.amazon.com/dp/1476714207/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
@@ -322,7 +334,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/61dJJaKOeOL._SY355_.jpg' class='card-img-top'>
 					<div class='card-footer text-center'>
 						<a href='https://www.amazon.com/dp/1398501948/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
@@ -332,54 +344,46 @@
 		</div>
 <!-- end section -->
 <!-- begin section -->
-		<div class='section'>
-			<div class='section-header'>Food Storage</div>
+		<div class='section' id="food-prep">
+			<div class='section-header'>Food Processing & Prep</div>
 		</div>
 
 		<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
 			<div class='col'>
-				<div class='card h-100'>
-					<img src='https://m.media-amazon.com/images/I/71s7J35eyGL._AC_SY355_.jpg' class='card-img-top'>
+				<div class='card'>
+					<img src='https://m.media-amazon.com/images/I/712J42Gd9iL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
-						<p class='card-text'>Freezer Containers</p>
+						<p class='card-text'>Genius Vegetable and Fruit Slicer/Dicer</p>
 					</div>
 					<div class='card-footer text-center'>
-						<a href='https://www.amazon.com/dp/B00RU38BYW/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
+						<a href='https://www.amazon.com/dp/B00BEGHHAU/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
 					</div>
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
-					<img src='https://m.media-amazon.com/images/I/7199NBb1X5L._AC_SY355_.jpg' class='card-img-top'>
+				<div class='card'>
+					<img src='https://m.media-amazon.com/images/I/91Ulir9wKXL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
-						<p class='card-text'>Freezer Crates<br>20.67"L x 14.17"W x 11.8"H</p>
+						<p class='card-text'>Mueller 10-in-1, Chopper / Mincer / Cutter / Dicer</p>
 					</div>
 					<div class='card-footer text-center'>
-						<a href='https://www.amazon.com/dp/B0CL9R4SMS/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
+						<a href='https://www.amazon.com/dp/B08N9Q24M9/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
 					</div>
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
-					<img src='https://m.media-amazon.com/images/I/719o6vu3IzL._AC_SY355_.jpg' class='card-img-top'>
+				<div class='card'>
+					<img src='https://m.media-amazon.com/images/I/71gRCRsnbjL.__AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
-						<p class='card-text'>Freezer Crates<br>20.9"L x 14.6"W x 10.6"H</p>
+						<p class='card-text'>Ninja Store</p>
 					</div>
 					<div class='card-footer text-center'>
-						<a href='https://www.amazon.com/dp/B07JD5WMH3/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
+						<a href='https://www.amazon.com/stores/page/A133538C-415B-4002-8574-72C694475847/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
 					</div>
 				</div>
 			</div>
-		</div>
-<!-- end section -->
-<!-- begin section -->
-		<div class='section'>
-			<div class='section-header'>Food Preparation</div>
-		</div>
-
-		<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/81E6QUmEzhL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>George Foreman Grills</p>
@@ -390,7 +394,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/51qxt83y-lL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Hamilton Beach Indoor Grill, 6-Serving</p>
@@ -401,7 +405,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/81R5ZsXZoML._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Hamilton Beach Electric Indoor Searing Grill, 6-Servings</p>
@@ -412,7 +416,7 @@
 				</div>
 			</div>
 			<div class='col'>
-				<div class='card h-100'>
+				<div class='card'>
 					<img src='https://m.media-amazon.com/images/I/71mke+nnceL._AC_SY355_.jpg' class='card-img-top'>
 					<div class='card-body'>
 						<p class='card-text'>Pyrex Wares</p>
@@ -425,76 +429,70 @@
 		</div>
 <!-- end section -->
 <!-- begin section -->
-			<div class='section'>
-				<div class='section-header'>Food Processing</div>
-			</div>
-
-			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
-				<div class='col'>
-					<div class='card h-100'>
-						<img src='https://m.media-amazon.com/images/I/712J42Gd9iL._AC_SY355_.jpg' class='card-img-top'>
-						<div class='card-body'>
-							<p class='card-text'>Genius Vegetable and Fruit Slicer/Dicer</p>
-						</div>
-						<div class='card-footer text-center'>
-							<a href='https://www.amazon.com/dp/B00BEGHHAU/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
-						</div>
-					</div>
-				</div>
-				<div class='col'>
-					<div class='card h-100'>
-						<img src='https://m.media-amazon.com/images/I/91Ulir9wKXL._AC_SY355_.jpg' class='card-img-top'>
-						<div class='card-body'>
-							<p class='card-text'>Mueller 10-in-1, Chopper / Mincer / Cutter / Dicer</p>
-						</div>
-						<div class='card-footer text-center'>
-							<a href='https://www.amazon.com/dp/B08N9Q24M9/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
-						</div>
-					</div>
-				</div>
-				<div class='col'>
-					<div class='card h-100'>
-						<img src='https://m.media-amazon.com/images/I/71gRCRsnbjL.__AC_SY355_.jpg' class='card-img-top'>
-						<div class='card-body'>
-							<p class='card-text'>Ninja Store</p>
-						</div>
-						<div class='card-footer text-center'>
-							<a href='https://www.amazon.com/stores/page/A133538C-415B-4002-8574-72C694475847/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
-						</div>
-					</div>
-				</div>
-			</div>
-<!-- end section -->
-<!-- begin section -->
-			<div class='section'>
-				<div class='section-header'>Kitchen</div>
-			</div>
-
-			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
-				<div class='col'>
-					<div class='card h-100'>
-						<img src='https://m.media-amazon.com/images/I/61eqNRPW8mL._AC_SY355_.jpg' class='card-img-top'>
-						<div class='card-body'>
-							<p class='card-text'>Auto Electric Can Opener</p>
-						</div>
-						<div class='card-footer text-center'>
-							<a href='https://www.amazon.com/dp/B07FVQLBL3/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
-						</div>
-					</div>
-				</div>
-				<div class='col'>
-					<div class='card h-100'>
-						<img src='https://m.media-amazon.com/images/I/61NBOdfxyKL._AC_SY355_.jpg' class='card-img-top'>
-						<div class='card-body'>
-							<p class='card-text'>2X Density Magic Sponge Eraser - 10, 20 or 50 Pack</p>
-						</div>
-						<div class='card-footer text-center'>
-							<a href='https://www.amazon.com/dp/B0C3YYQPJW/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
-						</div>
-					</div>
-				</div>
-			</div>
-<!-- end section -->
+		<div class='section' id="food-storage">
+			<div class='section-header'>Food Storage & Kitchen</div>
 		</div>
+
+		<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+			<div class='col'>
+				<div class='card'>
+					<img src='https://m.media-amazon.com/images/I/71s7J35eyGL._AC_SY355_.jpg' class='card-img-top'>
+					<div class='card-body'>
+						<p class='card-text'>Freezer Containers</p>
+					</div>
+					<div class='card-footer text-center'>
+						<a href='https://www.amazon.com/dp/B00RU38BYW/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
+					</div>
+				</div>
+			</div>
+			<div class='col'>
+				<div class='card'>
+					<img src='https://m.media-amazon.com/images/I/7199NBb1X5L._AC_SY355_.jpg' class='card-img-top'>
+					<div class='card-body'>
+						<p class='card-text'>Freezer Crates<br>20.67"L x 14.17"W x 11.8"H</p>
+					</div>
+					<div class='card-footer text-center'>
+						<a href='https://www.amazon.com/dp/B0CL9R4SMS/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
+					</div>
+				</div>
+			</div>
+			<div class='col'>
+				<div class='card'>
+					<img src='https://m.media-amazon.com/images/I/719o6vu3IzL._AC_SY355_.jpg' class='card-img-top'>
+					<div class='card-body'>
+						<p class='card-text'>Freezer Crates<br>20.9"L x 14.6"W x 10.6"H</p>
+					</div>
+					<div class='card-footer text-center'>
+						<a href='https://www.amazon.com/dp/B07JD5WMH3/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
+					</div>
+				</div>
+			</div>
+			<div class='col'>
+				<div class='card'>
+					<img src='https://m.media-amazon.com/images/I/61eqNRPW8mL._AC_SY355_.jpg' class='card-img-top'>
+					<div class='card-body'>
+						<p class='card-text'>Auto Electric Can Opener</p>
+					</div>
+					<div class='card-footer text-center'>
+						<a href='https://www.amazon.com/dp/B07FVQLBL3/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
+					</div>
+				</div>
+			</div>
+			<div class='col'>
+				<div class='card'>
+					<img src='https://m.media-amazon.com/images/I/61NBOdfxyKL._AC_SY355_.jpg' class='card-img-top'>
+					<div class='card-body'>
+						<p class='card-text'>2X Density Magic Sponge Eraser - 10, 20 or 50 Pack</p>
+					</div>
+					<div class='card-footer text-center'>
+						<a href='https://www.amazon.com/dp/B0C3YYQPJW/?tag=vitaleum-20' class='btn btn-warning'>View on Amazon</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- end section -->
+
+	</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
